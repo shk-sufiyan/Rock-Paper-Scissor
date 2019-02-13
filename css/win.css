@@ -1,0 +1,42 @@
+body
+{
+	heights: calc(100vh - 8em);
+	background-color:#fff;
+	font-family: 'Anonymous Pro', monospace;
+}
+.uw
+{
+	font-size: 190%;
+	font-wight: bolder;
+	text-align: center;
+	margin-top: 60px;;
+	text-wight: bolder;
+	text-transform: uppercase;
+	}
+img
+{
+	width:60%;
+	margin-left: 80px;
+	background-position: center;
+	background-position: cover;
+	margin-right: -60px;
+	}
+	.btn
+{
+	text-align: center;
+	font-size: 70%;
+	font-family: 'Anonymous Pro', monospace;
+	text-transform: uppercase;
+	color: #000;
+	text-shadow: 0 0 3px #859c3c;
+	background-color: #a7c44c;
+	border: 0;
+	cursor: none;
+	padding: 14px 20px;
+	margin: 0;
+	border-radius: 12px 0 12px 0;
+	margin-top: 20px;
+	transition: all 0.5s;
+	box-shadow: 10px 10px 20px;
+	margin-left: 37%;
+}

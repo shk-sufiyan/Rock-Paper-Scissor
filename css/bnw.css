@@ -1,0 +1,260 @@
+/* Created by SUFIYAN */
+
+body {
+    font-family:'Roboto Mono', monospace;
+    font-size:21px;
+    margin:0 0 0 0;
+    backgrounds-color: rgb(25, 25, 25);
+    background-image:url("bnk.jpg");
+    background-size:cover;
+
+}
+
+}
+#startMenu {
+    position:absolute;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 200px;
+    background:#000;
+    z-index:1000;
+    width:100%;
+    height:100%;
+}
+
+#startMenu h1 {
+    font-size:100px;
+    text-shadow:2px 3px #aaa;
+    font-weight:900;
+}
+
+#startMenu button {
+    font-size:50px;
+    background:none;
+    border:none;
+    border-top:3px solid #000;
+    border-bottom:3px solid #000;
+    padding:10px 30px 5px;
+    line-height:20px;
+    outline:none;
+}
+
+#startMenu h2 {
+    font-size:25px;
+}
+button {
+    font-size:17px;
+    font-family:arial, helvetica;
+    font-weight:bold;
+    padding:7px 15px 7px 15px;
+    margin:10px 0 0 0;
+    border:2px solid #202020;
+    background-color:#ffffff;
+    color:#202020;
+    cursor:pointer;
+}
+.play
+{
+	margin-left: 350px;
+	margin-top: 400px;
+	margin-right:;
+}
+.start
+{
+	color: #fff;
+	width: 100%;
+	padding: 0.1em 0.25em;
+	font-size: 19vmn;
+	
+}
+.line {
+      color: #fff;
+      margin-left: 300px;
+      margin-top: 200px;
+}
+
+/*Animation*/
+
+.anim-typewriter {
+      animation: typewriter 4s steps(10) 1s 1 normal both,
+      blinkTextCursor 500ms steps(10) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 21em;
+            overflow: hidden;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+button:hover {
+    background-color:#202020;
+    border:2px solid #202020;
+    color:#ffffff;
+}
+#main {
+    position:relative;
+    margin:auto;
+    width:360px;
+    height:440px;
+    overflow:hidden;
+}
+#header {
+    position:relative;
+    margin:auto;
+    width:350px;
+    height:70px;
+    background-image:url(scores.png);
+}
+.buttons {
+    position:absolute;
+    bottom:10px;
+    width:75px;
+    height:75px;
+    border:2px solid #000000;
+    cursor:pointer;
+    -webkit-border-radius:38px;
+    -moz-border-radius:38px;
+    border-radius:38px;
+    background-image:url(button.png);
+}
+.buttons#b_rock {
+    right:180px;
+    background-position:0 0;
+}
+.buttons#b_paper {
+    right:95px;
+    background-position:-75px 0;
+}
+.buttons#b_scissor {
+    right:10px;
+    background-position:-150px 0;
+}
+#playagain {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:245px;
+    height:75px;
+    border:2px solid #000000;
+    cursor:pointer;
+    -webkit-border-radius:38px;
+    -moz-border-radius:38px;
+    border-radius:38px;
+    background-image:url(button.png);
+    background-position:0 -75px;
+    display:none;
+}
+.scores {
+    position:absolute;
+    top:35px;
+    width:53px;
+    height:28px;
+    text-align:center;
+}
+.scores#score_computer {
+    left:153px;
+    color: #000;
+}
+.scores#score_you {
+    left:280px;
+    color: #000;
+}
+.options {
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:165px;
+    height:165px;
+    background-image:url(hnds.png);
+    
+  
+}
+@keyframes you_rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+@keyframes computer_rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+}
+.options#o_you {
+    background-position:0 0;
+    -webkit-transform-origin: right top;
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -o-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-animation: you_rotating .2s linear infinite;
+    -moz-animation: you_rotating .2s linear infinite;
+    -ms-animation: you_rotating .2s linear infinite;
+    -o-animation: you_rotating .2s linear infinite;
+    animation: you_rotating .2s linear infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.options#o_computer {
+    background-position:0 -165px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-animation: computer_rotating .2s linear infinite;
+    -moz-animation: computer_rotating .2s linear infinite;
+    -ms-animation: computer_rotating .2s linear infinite;
+    -o-animation: computer_rotating .2s linear infinite;
+    animation: computer_rotating .2s linear infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+}
+#result {
+    position:absolute;
+    top:0;
+    left:0;
+    width:220px;
+    height:29px;
+    background-image:url(results.png);
+    display:none;
+}

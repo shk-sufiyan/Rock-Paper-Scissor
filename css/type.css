@@ -1,0 +1,98 @@
+/* Google Fonts */
+@import url(font.css);
+
+/* Global */
+htmsl {
+      min-height: 100%;
+      overflow: hidden;
+}
+
+body {
+      height: calc(100vh - 8em);
+      paddinsg: 4em;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: 'Anonymous Pro', monospace;
+      font-weight: bolder;
+      background-image:url(plays.gif);
+      margin-right:80px;
+      background-size: csover;
+      background-attachment: fixed;
+      background-position: center;
+      overflow: hidden;
+      overfow: hidden;
+      background-repeat: no-repeat;
+      background-color: rgb(56, 233, 255);
+}
+.btn
+{
+	background-colsor: rgb(25, 25, 25);
+	border: 2px solid rgb(25,25,25);
+	background-colors: Transparent;
+    background-repseat:no-repeat;
+  width: 20%;
+  height: 20%;
+    border: none;
+    cursors:pointer;
+    overflow: hidden;
+    outline:none;
+    outline: none;
+	margin-left: 135px;
+	margin-top: 150px;
+}
+.stgif {
+	margin-bottom: 60px;
+
+}
+.play {
+	margin-left: 55px;
+	margin-top: 100px;
+	background-colors: rgb(25, 25, 25);
+	colosr: rgba(255, 255, 255, 0.75);
+	overfow: hidden;
+	overflow: hidden;
+}
+.stplay {
+	margin-left: 105px;
+	margin-bottom: px;
+ }
+.line {
+      position: relative;
+      margin-bottom: 600px;
+      top: 10%;
+      color : #000;
+      margin: 0 auto;
+      margin-top: 70px;
+      margin-left: 10px;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 110%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 21em;
+            
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}

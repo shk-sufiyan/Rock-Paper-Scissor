@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<center>
+<h1 class="ha">HOW TO PLAY</h1>
+
+<link rel="stylesheet" href="css/info.css">
+<button class= "btn" onclick="typeWriter()">Guide Me</button>
+</center>
+<p id="demo" class="pra"></p>
+
+<script>
+var i = 0;
+var txt ='Rock Paper Scissor Epic Battle is very classic, unique, challenging and addictive game. It’s time to install and play famous rock paper scissor classic game in your device. So let’s play the game with your friends or test your luck against the A.I and refresh your memories.Game is simple and easy to play. You can play with artificial intelligence. In this legendary rock paper scissor game you and the opponent choose a sign of your choice. If you’re a beginner and don’t know the rule of the game, don’t worry here’s a short detail of the rules of the game choose a sign of rock, paper and scissor that you will then compare, the rock break the scissors but covered by the paper, the paper beat the stone but cut by the scissors and the scissors beat the paper but are broken by the stone.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</body>
+</html>

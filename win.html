@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.3.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for PhoneGap to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // PhoneGap is ready
+    //
+    function onDeviceReady() {
+        var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
+
+function populateDB(tx) {
+     tx.executeSql('DROP TABLE IF EXISTS DEMO');
+     tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id, data unique)');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES ("scoreyous", 4)');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES ("scorecoms", 6)');
+}
+
+function errorCB(err) {
+    alert("Error processing SQL: "+err.code);
+}
+
+function successCB() {
+    alert("success!");
+}
+function GetRecord (){
+       var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+       db.transaction(SelectData, errorCB, successCB);
+
+}
+function SelectData (tx){
+	tx.executeSql ("select * from DEMO", [], resultSuccess, resultError);
+}
+function resultSuccess (tx, response){
+	//alert ("Response :"+ response);
+	var div = document.getElementById ("responsediv");
+	var tmp;
+	
+	alert(response.rows.length);
+	for (var i=0; i <response.rows.length; i++)
+	{
+		tmp+ = response.rows.item(i);
+		div.innerHTML = +tmp;
+		tmp= "";
+	}
+
+}
+function resultError (error)
+{
+	alert (error);
+}
+
+var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
+db.transaction(populateDB, errorCB, successCB);
+db.transaction(SelectData, errorCB);
+
+    </script>
+  </head>
+  <body>
+    <h1>Example</h1>
+    <p>Open Database</p>
+<input type="submit" value=" Get data from database" id="btn" onclick="GetRecords ()">
+<div class="options" id="score_computer"></div>
+            <div class="options" id="score_you"></div>
+<div id="responsediv">
+
+</div>
+  </body>
+</html>

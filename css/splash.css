@@ -1,0 +1,19 @@
+body {
+      background-image:url(ssplash.gif);
+      background-size: cover;
+      background-color: rgb(40, 44, 41);
+      background-repeat: no-repeat;
+      
+}
+.cpr
+{
+	position: fixed;
+	bottom: 0px;
+	font-size: 90%;
+	margin-bottom: 100px;
+	margin-left: 40px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.75);
+	margin-top: px;
+	
+	}
