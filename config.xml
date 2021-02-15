@@ -14,14 +14,16 @@
     </description>
  
     <author href="https://YourWebsite.com" email="yourEmail@goesHere.com">
-        Name Of The Author
+<!--         Name Of The Author -->
+        Sufiyan Shaikh
     </author>
  
    <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
   <preference name="KeepRunning" value="false"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="android-build-tool" value="gradle" />  
+  <preference name="android-build-tool" value="gradle" />
+  <preference name="android-minSdkVersion" value="14" />
  
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-x-socialsharing" source="npm" />
