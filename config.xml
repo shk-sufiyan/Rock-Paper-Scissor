@@ -23,8 +23,8 @@
   <preference name="KeepRunning" value="false"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="android-build-tool" value="gradle" />
-  <preference name="android-minSdkVersion" value="27" />
-  <preference name="android-targetSdkVersion" value="27" />
+  <preference name="android-minSdkVersion" value="25" />
+  <preference name="android-targetSdkVersion" value="25" />
   <preference name="phonegap-version" value="cli-8.0.0" />
  
   <plugin name="cordova-plugin-whitelist" source="npm" />
